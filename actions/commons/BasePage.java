@@ -331,6 +331,6 @@ public class BasePage { //là các hàm dùng chung cho page object
 			explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 		 }
 	 
-	 private long longTimeout = 30;
-	 private long shortTimeout = 5;
+	 public long longTimeout = 30;
+	 public long shortTimeout = 5;
 }
