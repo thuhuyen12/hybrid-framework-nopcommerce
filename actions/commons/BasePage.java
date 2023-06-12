@@ -15,6 +15,13 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import pageObject.AddressPageObject;
+import pageObject.MyProductReviewPageObject;
+import pageObject.PageGeneratorManager;
+import pageObject.RewardPointPageObject;
+import pageUIs.BasePageUI;
+import pageUIs.CustomerInfoPageUI;
+
 public class BasePage { //là các hàm dùng chung cho page object
 
 	public static BasePage getBasePageObject() {
@@ -331,6 +338,23 @@ public class BasePage { //là các hàm dùng chung cho page object
 			explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 		 }
 	 
+	 public AddressPageObject openAddressPage(WebDriver driver) {
+			waitForElementClickable(driver, BasePageUI.ADDRESS_LINK);
+			clickToElement(driver, BasePageUI.ADDRESS_LINK);
+			return PageGeneratorManager.getAddressPage(driver);
+		}
+	 
+	 public MyProductReviewPageObject openMyProductReviewPage(WebDriver driver) {
+			waitForElementClickable(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
+			clickToElement(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
+			return PageGeneratorManager.getMyProductReviewPage(driver);
+		}
+	 public RewardPointPageObject openRewardPointPage(WebDriver driver) {
+			waitForElementClickable(driver, BasePageUI.REWARD_POINT_LINK);
+			clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
+			return PageGeneratorManager.getRewardPointPage(driver);
+		}
+	 
+	 
 	 protected long longTimeout = 30;
-	 protected long shortTimeout = 5;
 }
