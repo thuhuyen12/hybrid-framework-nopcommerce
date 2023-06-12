@@ -4,21 +4,8 @@
   <test name="Run on Firefox"> <!-- test name: môi trường chạy-->
   <parameter name = "browser" value ="firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
+      <class name="com.nopcommerce.user.Level_06_Page_Generator_Manager_III"/>
     </classes>
   </test> 
   
-  <test name="Run on Chrome"> <!-- test name: môi trường chạy-->
-  <parameter name = "browser" value ="chrome"/>
-    <classes>
-      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
-    </classes>
-  </test> 
-  
-  <test name="Run on Edge"> <!-- test name: môi trường chạy-->
-  <parameter name = "browser" value ="edge"/>
-    <classes>
-      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
-    </classes>
-  </test> 
 </suite> 
