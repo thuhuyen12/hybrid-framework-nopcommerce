@@ -4,11 +4,11 @@ import org.testng.annotations.Test;
 
 import commons.BasePage;
 import commons.BaseTest;
-import pageObject.HomePageObject;
-import pageObject.LoginPageObject;
-import pageObject.CustomerInfoPageObject;
-import pageObject.PageGeneratorManager;
-import pageObject.RegisterPageObject;
+import commons.PageGeneratorManager;
+import pageObject.nopCommerce.user.CustomerInfoPageObject;
+import pageObject.nopCommerce.user.HomePageObject;
+import pageObject.nopCommerce.user.LoginPageObject;
+import pageObject.nopCommerce.user.RegisterPageObject;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;

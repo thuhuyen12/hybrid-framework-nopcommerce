@@ -1,10 +1,10 @@
-package pageObject;
+package pageObject.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.server.handler.interactions.SendKeyToActiveElement;
 
 import commons.BasePage;
-import pageUIs.RegisterPageUI;
+import pageUIs.user.RegisterPageUI;
 
 public class RegisterPageObject extends BasePage{
 

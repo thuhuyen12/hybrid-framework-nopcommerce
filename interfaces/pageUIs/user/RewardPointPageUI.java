@@ -1,6 +1,6 @@
-package pageUIs;
+package pageUIs.user;
 
 public class RewardPointPageUI {
-	public static final String ADDRESS_PAGE = "//div[contains(@class,'account-navigation')]//a[text()='Addresses']";
+	public static final String ADDRESS_PAGE = "xpath=//div[contains(@class,'account-navigation')]//a[text()='Addresses']";
 
 }

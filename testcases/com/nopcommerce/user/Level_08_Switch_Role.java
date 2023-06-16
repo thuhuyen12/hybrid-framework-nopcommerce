@@ -4,7 +4,10 @@ import org.testng.annotations.Test;
 
 import commons.BasePage;
 import commons.BaseTest;
+import commons.GlobalConstants;
 import commons.PageGeneratorManager;
+import pageObject.nopCommerce.admin.AdminLoginPageObject;
+import pageObject.nopCommerce.admin.DashboardPageObject;
 import pageObject.nopCommerce.user.AddressPageObject;
 import pageObject.nopCommerce.user.CustomerInfoPageObject;
 import pageObject.nopCommerce.user.HomePageObject;
@@ -27,7 +30,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_07_Switch_Page extends BaseTest{
+public class Level_08_Switch_Role extends BaseTest{
 
 	@Parameters("browser")
 	@BeforeClass
@@ -39,10 +42,9 @@ public class Level_07_Switch_Page extends BaseTest{
 		lastName="Minh Tai";
 		password="123456";
 		validEmail = "minhtai" + generateFakeNumber() + "@gmail.com";		
-	}
-
-	@Test
-	public void User_01_Register() {
+		adminEmail = "admin@yourstore.com";
+		adminPassword= "admin";
+		
 		homePage = PageGeneratorManager.getHomePage(driver);
 
 		registerPage = homePage.clickToRegisterLink();
@@ -56,51 +58,43 @@ public class Level_07_Switch_Page extends BaseTest{
 		
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 		
-//		registerPage.clickToLogoutLink();
-
-	
-		
 	}
-	
-	@Test
-	public void User_02_Login() {
-		loginPage = homePage.clickToLoginLink();	
-		loginPage.inputToEmailTextbox(validEmail);
-		loginPage.inputToPasswordTextbox(password);
 
-		homePage = 	loginPage.clickToLoginButton();
+	@Test
+	public void User_01_User_To_Admin() {
+		loginPage = homePage.clickToLoginLink();	
+		
+		//Login with role User
+		homePage = loginPage.loginAsUser(validEmail,password);
 		
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 		
+		homePage = loginPage.clickLogoutAtUserPage(driver);
+		
+		homePage.openPageUrl(driver, GlobalConstants.ADMIN_PAGE_URL);
+		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
+	
+		dashboardPage= adminLoginPage.loginAsAdmin(adminEmail, adminPassword);
+		Assert.assertTrue(dashboardPage.isDashboardHeaderDisplayed());
+		//Logout => Admin Login
+		adminLoginPage = dashboardPage.clickLogoutAtAdminPage(driver);
+		
 	}
 	
 	@Test
-	public void User_03_MyAccount() {
-		customerInfoPage = homePage.clickToMyAccountLink();
-
-		Assert.assertTrue(customerInfoPage.isCustomerInfoPageDisplayed());
+	public void User_02_Admin_To_User() {
+		//Từ admin => User homepage
+		adminLoginPage.openPageUrl(driver, GlobalConstants.USER_PAGE_URL);
+		homePage = PageGeneratorManager.getHomePage(driver);
+		
+		//Homepage => login page user
+		loginPage = homePage.clickToLoginLink();
+		
+		homePage = loginPage.loginAsUser(validEmail,password);
+		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 
 	}
-	
-	@Test
-	public void User_04_Switch_Page() {
-		// Customer Info => Address
-		addressPage = customerInfoPage.openAddressPage(driver);
-		// Address => My product review
-		myProductReviewPage = addressPage.openMyProductReviewPage(driver);
-		
-		// My product review => Reward Point
-		rewardPointPage = myProductReviewPage.openRewardPointPage(driver);
-		
-		// Reward Point => Address
-		addressPage = rewardPointPage.openAddressPage(driver);
-		// Address => Reward Point
-		rewardPointPage = addressPage.openRewardPointPage(driver);
-		//Reward Point => My product review
-		myProductReviewPage = rewardPointPage.openMyProductReviewPage(driver);
-	}
-	
-	
+
 	
 	@AfterClass
 	public void afterClass() {
@@ -108,17 +102,11 @@ public class Level_07_Switch_Page extends BaseTest{
 	}
 
 	private WebDriver driver;
-	private String firstName, lastName, validEmail, password;
+	private String firstName, lastName, validEmail, password, adminEmail, adminPassword;
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfoPage;
-	private AddressPageObject addressPage;
-	private MyProductReviewPageObject myProductReviewPage;
-	private RewardPointPageObject rewardPointPage;
-
-
+	private AdminLoginPageObject adminLoginPage;
+	private DashboardPageObject dashboardPage;
 	
-	
-
 }

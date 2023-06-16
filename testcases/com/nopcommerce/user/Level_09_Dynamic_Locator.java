@@ -27,7 +27,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_07_Switch_Page extends BaseTest{
+public class Level_09_Dynamic_Locator extends BaseTest{
 
 	@Parameters("browser")
 	@BeforeClass
@@ -42,7 +42,7 @@ public class Level_07_Switch_Page extends BaseTest{
 	}
 
 	@Test
-	public void User_01_Register() {
+	public void User_01_Register_Login() {
 		homePage = PageGeneratorManager.getHomePage(driver);
 
 		registerPage = homePage.clickToRegisterLink();
@@ -58,32 +58,19 @@ public class Level_07_Switch_Page extends BaseTest{
 		
 //		registerPage.clickToLogoutLink();
 
-	
-		
-	}
-	
-	@Test
-	public void User_02_Login() {
 		loginPage = homePage.clickToLoginLink();	
 		loginPage.inputToEmailTextbox(validEmail);
 		loginPage.inputToPasswordTextbox(password);
 
-		homePage = 	loginPage.clickToLoginButton();
-		
+		homePage = 	loginPage.clickToLoginButton();	
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 		
-	}
-	
-	@Test
-	public void User_03_MyAccount() {
 		customerInfoPage = homePage.clickToMyAccountLink();
-
 		Assert.assertTrue(customerInfoPage.isCustomerInfoPageDisplayed());
-
 	}
 	
 	@Test
-	public void User_04_Switch_Page() {
+	public void User_02_Dynamic_Page() {
 		// Customer Info => Address
 		addressPage = customerInfoPage.openAddressPage(driver);
 		// Address => My product review
@@ -100,7 +87,48 @@ public class Level_07_Switch_Page extends BaseTest{
 		myProductReviewPage = rewardPointPage.openMyProductReviewPage(driver);
 	}
 	
+	@Test
+	public void User_03_Dynamic_Page_01() {	
+		// My product review => Reward Point
+		rewardPointPage = (RewardPointPageObject) myProductReviewPage.openPageAtMyAccountByName(driver,"Reward points");
+		
+		// Reward Point => Address
+		addressPage = (AddressPageObject) rewardPointPage.openPageAtMyAccountByName(driver,"Addresses");
+		// Address => Reward Point
+		rewardPointPage = (RewardPointPageObject) addressPage.openPageAtMyAccountByName(driver,"Reward points");
+		//Reward Point => My product review
+		myProductReviewPage = (MyProductReviewPageObject) rewardPointPage.openPageAtMyAccountByName(driver,"My product reviews");
+		//My product review => Customer Info
+		customerInfoPage = (CustomerInfoPageObject) myProductReviewPage.openPageAtMyAccountByName(driver, "Customer info");
 	
+	}
+	@Test
+	public void User_03_Dynamic_Page_02() {	
+		//Customer Info => Product review
+		 customerInfoPage.openPageAtMyAccountByPageName(driver, "My product reviews");
+		 myProductReviewPage = PageGeneratorManager.getMyProductReviewPage(driver);
+		
+		 // My product review => Reward Point
+		 myProductReviewPage.openPageAtMyAccountByName(driver, "Reward points");
+		 rewardPointPage = PageGeneratorManager.getRewardPointPage(driver);
+
+		// Reward Point => Address
+		 rewardPointPage.openPageAtMyAccountByName(driver,"Addresses");
+		 addressPage = PageGeneratorManager.getAddressPage(driver);
+		 
+		// Address => Reward Point
+		addressPage.openPageAtMyAccountByName(driver,"Reward points");
+		rewardPointPage = PageGeneratorManager.getRewardPointPage(driver);
+		
+		//Reward Point => My product review
+		rewardPointPage.openPageAtMyAccountByName(driver,"My product reviews");
+		myProductReviewPage = PageGeneratorManager.getMyProductReviewPage(driver);
+		
+		//My product review => Customer Info
+		myProductReviewPage.openPageAtMyAccountByName(driver, "Customer info");
+		customerInfoPage = PageGeneratorManager.getCustomerInfoPage(driver);
+	
+	}
 	
 	@AfterClass
 	public void afterClass() {

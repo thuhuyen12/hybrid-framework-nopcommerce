@@ -1,10 +1,10 @@
-package pageObject;
+package pageObject.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.HomePageUI;
-import pageUIs.CustomerInfoPageUI;
+import pageUIs.user.CustomerInfoPageUI;
+import pageUIs.user.HomePageUI;
 
 public class CustomerInfoPageObject extends BasePage{
 	private WebDriver driver;

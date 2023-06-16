@@ -1,9 +1,10 @@
-package pageObject;
+package pageObject.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.LoginPageUI;
+import commons.PageGeneratorManager;
+import pageUIs.user.LoginPageUI;
 
 public class LoginPageObject extends BasePage{
 	private WebDriver driver;
@@ -38,6 +39,13 @@ public class LoginPageObject extends BasePage{
 	public String getUnsuccessfulErrorMessage() {
 		waitForElementVisible(driver, LoginPageUI.UNSUCCESFUL_ERROR_MESSAGE);
 		return getElementText(driver, LoginPageUI.UNSUCCESFUL_ERROR_MESSAGE);
+	}
+
+	public HomePageObject loginAsUser(String validEmail, String password) {
+		//Wrapper từ những hàm khác khi thực hiện các action
+		inputToEmailTextbox(validEmail);
+		inputToPasswordTextbox(password);
+		return clickToLoginButton();
 	}
 	
 	
