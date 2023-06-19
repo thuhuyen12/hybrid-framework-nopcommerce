@@ -131,7 +131,7 @@ public class Level_09_Dynamic_Locator extends BaseTest{
 	}
 	
 	@AfterClass
-	public void afterClass() {
+	public void afterClass() { 
 		driver.quit();
 	}
 

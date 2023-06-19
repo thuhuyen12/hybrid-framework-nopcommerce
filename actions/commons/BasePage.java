@@ -22,7 +22,9 @@ import pageObject.nopCommerce.user.CustomerInfoPageObject;
 import pageObject.nopCommerce.user.HomePageObject;
 import pageObject.nopCommerce.user.MyProductReviewPageObject;
 import pageObject.nopCommerce.user.RewardPointPageObject;
+import pageUIs.jquery.uploadFiles.HomePageUIsUploadFile;
 import pageUIs.user.BasePageUI;
+import pageUIs.user.BasePageUploadFileUI;
 import pageUIs.user.CustomerInfoPageUI;
 
 public class BasePage { //là các hàm dùng chung cho page object
@@ -370,7 +372,16 @@ public class BasePage { //là các hàm dùng chung cho page object
 				return false;
 			}
 		}
-	 
+
+		public boolean isImageLoaded(WebDriver driver, String locatorType, String...dynamicValues) {
+			JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+			boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
+			if (status) {
+				return true;
+			} else {
+				return false;
+			}
+		}
 	 public void waitForElementVisible(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locatorType)));
@@ -466,6 +477,22 @@ public class BasePage { //là các hàm dùng chung cho page object
 		clickToElement(driver, BasePageUI.LOGOUT_LINK_AT_ADMIN);
 		return PageGeneratorManager.getAdminLoginPage(driver);
 	 }
+	
+	//Upload File
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+		//Đường dẫn của thư mục Upload file: Win/Mac/Linux
+		String filePath = GlobalConstants.UPLOAD_FILE ;
+		
+		//Đường dẫn của tất cả file
+		String fullFileName = "";
+		
+		for (String file : fileNames) {
+			fullFileName = fullFileName + filePath + file + "\n";
+		}
+		
+		fullFileName = fullFileName.trim();//Cắt bỏ khoảng trắng
+		getWebElement(driver, HomePageUIsUploadFile.UPLOAD_FILE).sendKeys(fullFileName);
+	}
 	
 	
 	 public long longTimeout = GlobalConstants.LONG_TIMEOUT;

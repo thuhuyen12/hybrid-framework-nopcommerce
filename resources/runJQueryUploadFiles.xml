@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="NopCommerce"> <!-- Tên dự án-->
-	<listeners>
-		<listener class-name = "commons.MethodListener"></listener>
-	</listeners>
-	
+<suite name="JQuery"> <!-- Tên dự án-->
+<parameter name = "url" value ="https://blueimp.github.io/jQuery-File-Upload/"/>
   <test name="Run on Firefox"> <!-- test name: môi trường chạy-->
   <parameter name = "browser" value ="firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_12_Assert_Verify"/>
+      <class name="com.jquery.Level_11_Upload_Files"/>
     </classes>
   </test> 
   

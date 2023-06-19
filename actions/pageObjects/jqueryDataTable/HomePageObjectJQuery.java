@@ -1,4 +1,4 @@
-package pageObjects.jquery;
+package pageObjects.jqueryDataTable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import commons.BasePage;
-import pageUIs.jquery.HomePageUIsJQuery;
+import pageUIs.jquery.dataTable.HomePageUIsJQuery;
 
 public class HomePageObjectJQuery extends BasePage{
 	WebDriver driver;
