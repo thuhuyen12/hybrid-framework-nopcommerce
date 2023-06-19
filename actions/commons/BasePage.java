@@ -1,7 +1,9 @@
 package commons;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -264,12 +266,38 @@ public class BasePage { //là các hàm dùng chung cho page object
 	 }
 	 
 	 public boolean isElementDisplayed(WebDriver driver, String locatorType) {
-		 return getWebElement(driver, locatorType).isDisplayed();
+		 try {
+			return getWebElement(driver, locatorType).isDisplayed();
+		} catch (Exception e) {
+			return false;
+		}
 	 }
+//	 public boolean isElementDisplayed(WebDriver driver, String locatorType) {
+//		 return getWebElement(driver, locatorType).isDisplayed();
+//	 }
 	 public boolean isElementDisplayed(WebDriver driver, String locatorType, String...dynamicValues) {
 		 return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).isDisplayed();
 	 }
 	 
+	 public void overrideGlobalTimeout(WebDriver driver, long timeOut) {
+		 driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+	 }
+	 
+	 public boolean isElementUndisplayed(WebDriver driver, String locatorType) {
+		 overrideGlobalTimeout(driver, shortTimeout);
+		 List<WebElement> elements= getListElements(driver, locatorType);
+		 overrideGlobalTimeout(driver, longTimeout);
+
+		 if (elements.size()==0) {
+			return true;
+		} else if (elements.size()> 0 && !elements.get(0).isDisplayed()){
+			return true;
+		} else {
+			return false;
+		}
+	}
+	 
+	
 	 public boolean isElementSelected(WebDriver driver, String locatorType) {
 		 return getWebElement(driver, locatorType).isSelected();
 	 }
@@ -398,7 +426,17 @@ public class BasePage { //là các hàm dùng chung cho page object
 			WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 			explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 		 }
-		 
+	/*
+	 * Wait for element undisplayed in DOM or not in DOM and override implicit Timeout - find Element
+	 */
+	 public void waitForElementUndisplayed(WebDriver driver, String locatorType) {
+			WebDriverWait explicitWait = new WebDriverWait(driver, shortTimeout);
+			overrideGlobalTimeout(driver, shortTimeout);
+			explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
+			overrideGlobalTimeout(driver, longTimeout);
+
+		 }	 
+	
 	 public void waitForElementInvisible(WebDriver driver, String locatorType) {
 			WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 			explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
@@ -496,4 +534,6 @@ public class BasePage { //là các hàm dùng chung cho page object
 	
 	
 	 public long longTimeout = GlobalConstants.LONG_TIMEOUT;
+	 public long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
+
 }
