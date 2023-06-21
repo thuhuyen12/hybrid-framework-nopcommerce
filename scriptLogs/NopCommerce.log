@@ -1,0 +1,149 @@
+[INFO ] [2023-06-19 21:05:36,799] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-19 21:05:38,423] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-19 21:05:38,513] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-19 21:05:38,594] Register - Step 04: Enter to Email textbox with value is minhtai6028@gmail.com
+[INFO ] [2023-06-19 21:05:38,683] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-19 21:05:38,760] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-19 21:05:38,833] Register - Step 07: Click to Register button
+[INFO ] [2023-06-19 21:05:39,627] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-19 21:05:39,687]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-19 21:05:39,690] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-19 21:05:40,127] Login - Step 02: Enter to email textbox with email is minhtai6028@gmail.com
+[INFO ] [2023-06-19 21:05:40,218] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-19 21:05:40,308] Login - Step 04: Click to login button
+[INFO ] [2023-06-19 21:05:40,965] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-19 21:05:41,028]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-19 21:05:41,028] Login - Step 06: Navigate to My account page
+[INFO ] [2023-06-19 21:05:41,495] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2023-06-19 21:05:41,569]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-19 21:09:02,601] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-19 21:09:03,622] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-19 21:09:03,711] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-19 21:09:03,795] Register - Step 04: Enter to Email textbox with value is minhtai2394@gmail.com
+[INFO ] [2023-06-19 21:09:03,885] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-19 21:09:04,007] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-19 21:09:04,096] Register - Step 07: Click to Register button
+[INFO ] [2023-06-19 21:09:04,809] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-19 21:09:04,860]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-19 21:09:04,862] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-19 21:09:05,239] Login - Step 02: Enter to email textbox with email is minhtai2394@gmail.com
+[INFO ] [2023-06-19 21:09:05,327] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-19 21:09:05,406] Login - Step 04: Click to login button
+[INFO ] [2023-06-19 21:09:06,051] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-19 21:09:06,114]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-19 21:09:06,115] Login - Step 06: Navigate to My account page
+[INFO ] [2023-06-19 21:09:06,495] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2023-06-19 21:09:06,563]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-19 21:27:19,971] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-19 21:27:20,506] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-19 21:27:20,597] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-19 21:27:20,695] Register - Step 04: Enter to Email textbox with value is minhtai9951@gmail.com
+[INFO ] [2023-06-19 21:27:20,781] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-19 21:27:20,869] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-19 21:27:20,949] Register - Step 07: Click to Register button
+[INFO ] [2023-06-19 21:27:21,623] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-19 21:27:21,672]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-19 21:27:21,676] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-19 21:27:22,069] Login - Step 02: Enter to email textbox with email is minhtai9951@gmail.com
+[INFO ] [2023-06-19 21:27:22,155] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-19 21:27:22,234] Login - Step 04: Click to login button
+[INFO ] [2023-06-19 21:27:22,914] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-19 21:27:22,980]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-19 21:27:22,980] Login - Step 06: Navigate to My account page
+[INFO ] [2023-06-19 21:27:23,356] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2023-06-19 21:27:23,416]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-20 10:52:53,865] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-20 10:52:54,925] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-20 10:52:55,017] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-20 10:52:55,099] Register - Step 04: Enter to Email textbox with value is minhtai2913@gmail.com
+[INFO ] [2023-06-20 10:52:55,189] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-20 10:52:55,283] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-20 10:52:55,372] Register - Step 07: Click to Register button
+[INFO ] [2023-06-20 10:52:56,064] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-20 10:52:56,118]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-06-20 10:52:56,222] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-20 10:52:56,650] Login - Step 02: Enter to email textbox with email is minhtai2913@gmail.com
+[INFO ] [2023-06-20 10:52:56,741] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-20 10:52:56,821] Login - Step 04: Click to login button
+[INFO ] [2023-06-20 10:52:57,477] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-20 10:52:57,546]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-06-20 10:52:57,546] Login - Step 06: Navigate to My account page
+[INFO ] [2023-06-20 10:52:57,927] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2023-06-20 10:52:57,998]  -------------------------- FAILED -------------------------- 
+[INFO ] [2023-06-20 10:59:44,687] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-20 10:59:45,703] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-20 10:59:45,793] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-20 10:59:45,873] Register - Step 04: Enter to Email textbox with value is minhtai9601@gmail.com
+[INFO ] [2023-06-20 10:59:45,964] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-20 10:59:46,036] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-20 10:59:46,119] Register - Step 07: Click to Register button
+[INFO ] [2023-06-20 10:59:46,801] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-20 10:59:46,943] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-20 10:59:47,329] Login - Step 02: Enter to email textbox with email is minhtai9601@gmail.com
+[INFO ] [2023-06-20 10:59:47,413] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-20 10:59:47,493] Login - Step 04: Click to login button
+[INFO ] [2023-06-20 10:59:48,129] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-20 11:21:19,517] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-20 11:21:20,599] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-20 11:21:20,684] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-20 11:21:20,779] Register - Step 04: Enter to Email textbox with value is minhtai4489@gmail.com
+[INFO ] [2023-06-20 11:21:20,870] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-20 11:21:20,958] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-20 11:21:21,038] Register - Step 07: Click to Register button
+[INFO ] [2023-06-20 11:21:21,832] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-20 11:21:21,964] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-20 11:21:22,399] Login - Step 02: Enter to email textbox with email is minhtai4489@gmail.com
+[INFO ] [2023-06-20 11:21:22,492] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-20 11:21:22,572] Login - Step 04: Click to login button
+[INFO ] [2023-06-20 11:21:23,283] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-20 11:23:50,915] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-20 11:23:51,964] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-20 11:23:52,048] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-20 11:23:52,129] Register - Step 04: Enter to Email textbox with value is minhtai1263@gmail.com
+[INFO ] [2023-06-20 11:23:52,220] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-20 11:23:52,290] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-20 11:23:52,369] Register - Step 07: Click to Register button
+[INFO ] [2023-06-20 11:23:53,069] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-20 11:23:53,200] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-20 11:23:53,589] Login - Step 02: Enter to email textbox with email is minhtai1263@gmail.com
+[INFO ] [2023-06-20 11:23:53,671] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-20 11:23:53,753] Login - Step 04: Click to login button
+[INFO ] [2023-06-20 11:23:54,402] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-20 11:27:24,409] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-20 11:27:25,432] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-20 11:27:25,563] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-20 11:27:25,697] Register - Step 04: Enter to Email textbox with value is minhtai9053@gmail.com
+[INFO ] [2023-06-20 11:27:25,842] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-20 11:27:25,971] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-20 11:27:26,089] Register - Step 07: Click to Register button
+[INFO ] [2023-06-20 11:27:26,797] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-20 11:27:27,025] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-20 11:27:27,427] Login - Step 02: Enter to email textbox with email is minhtai9053@gmail.com
+[INFO ] [2023-06-20 11:27:27,548] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-20 11:27:27,678] Login - Step 04: Click to login button
+[INFO ] [2023-06-20 11:27:28,352] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-20 11:45:57,806] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-20 11:45:58,817] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-20 11:45:58,939] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-20 11:45:59,063] Register - Step 04: Enter to Email textbox with value is minhtai3918@gmail.com
+[INFO ] [2023-06-20 11:45:59,188] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-20 11:45:59,309] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-20 11:45:59,429] Register - Step 07: Click to Register button
+[INFO ] [2023-06-20 11:46:00,121] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-20 11:46:00,346] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-20 11:46:00,726] Login - Step 02: Enter to email textbox with email is minhtai3918@gmail.com
+[INFO ] [2023-06-20 11:46:00,841] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-20 11:46:00,981] Login - Step 04: Click to login button
+[INFO ] [2023-06-20 11:46:01,693] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-21 17:55:41,492] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-21 17:55:42,482] Login - Step 02: Enter to email textbox with email is minhtai5536@gmail.com
+[INFO ] [2023-06-21 17:55:42,602] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-21 17:55:42,722] Login - Step 04: Click to login button
+[INFO ] [2023-06-21 18:44:50,290] Pre -con Login 01: Navigate to login link
+[INFO ] [2023-06-21 18:44:51,306] Pre -con Login 02: Set Cookie and reload page
+[INFO ] [2023-06-21 18:44:54,426] Pre -con Login 03: verify 'My account' is displayed
+[INFO ] [2023-06-21 18:44:54,832]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-21 18:47:29,828] Pre -con Login 01: Navigate to login link
+[INFO ] [2023-06-21 18:47:31,338] Pre -con Login 02: Set Cookie and reload page
+[INFO ] [2023-06-21 18:47:34,455] Pre -con Login 03: verify 'My account' is displayed
+[INFO ] [2023-06-21 18:47:34,830]  -------------------------- PASSED -------------------------- 

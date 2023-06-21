@@ -6,6 +6,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -531,6 +532,17 @@ public class BasePage { //là các hàm dùng chung cho page object
 		fullFileName = fullFileName.trim();//Cắt bỏ khoảng trắng
 		getWebElement(driver, HomePageUIsUploadFile.UPLOAD_FILE).sendKeys(fullFileName);
 	}
+	
+	public Set<Cookie> getAllCookies(WebDriver driver){
+		return driver.manage().getCookies();
+	}
+	 public void setCookies (WebDriver driver, Set<Cookie> Cookies) {
+		 for (Cookie cookie : Cookies) {
+			driver.manage().addCookie(cookie);
+		}
+		 sleepInSecond(3);
+	 }
+	
 	
 	
 	 public long longTimeout = GlobalConstants.LONG_TIMEOUT;

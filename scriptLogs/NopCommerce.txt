@@ -1,0 +1,4 @@
+[INFO ] [2023-06-21 18:47:29,828] Pre -con Login 01: Navigate to login link
+[INFO ] [2023-06-21 18:47:31,338] Pre -con Login 02: Set Cookie and reload page
+[INFO ] [2023-06-21 18:47:34,455] Pre -con Login 03: verify 'My account' is displayed
+[INFO ] [2023-06-21 18:47:34,830]  -------------------------- PASSED -------------------------- 

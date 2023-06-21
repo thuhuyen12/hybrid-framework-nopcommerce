@@ -15,7 +15,8 @@ public class GlobalConstants {
 	public static final String BROWSER_LOG_FOLDER = PROJECT_PATH + File.separator + "browserLogs";
 	public static final String DRAG_DROP_HTML5 = PROJECT_PATH + File.separator + "dragDropHTML5";
 	public static final String AUTO_IT_SCRIPT = PROJECT_PATH + File.separator + "autoIT";
-
+	public static final String REPORTNG_SCREENSHOT = PROJECT_PATH + File.separator + "ReportNGImages" + File.separator;
+	public static final String JAVA_VERSION = System.getProperty("java.version");
 	//Database / Account user, pass , port
 	public static final String DP_DEV_URL = "192.244235.21"; //là 1 địa chỉ IP của thiết bị
 	public static final String DP_DEV_USERNAME = "automation"; 
