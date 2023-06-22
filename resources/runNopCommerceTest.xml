@@ -12,8 +12,7 @@
   <test name="Run on Chrome"> <!-- test name: môi trường chạy-->
   <parameter name = "browser" value ="chrome"/>
     <classes>
-      <class name="com.nopcommerce.common.Common_01_Register_Cookie"/>
-      <class name="com.nopcommerce.user.Level_16_Share_Data_Cookie"/>
+      <class name="com.nopcommerce.user.Level_17_Custom_Close_Driver"/>
     </classes>
   </test> 
   
