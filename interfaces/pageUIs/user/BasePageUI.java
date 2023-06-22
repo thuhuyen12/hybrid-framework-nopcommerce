@@ -12,4 +12,15 @@ public class BasePageUI {
 	
 	public static final String LOGOUT_LINK_AT_ADMIN = "xpath=//a[text()='Logout']";
 
+	//Pattern Object
+	public static final String DYNAMIC_TEXTBOX_BY_ID = "xpath=//input[@id='%s']";
+	
+	public static final String DYNAMIC_BUTTON_BY_TEXT = "xpath=//button[text()='%s']";
+	
+	public static final String DYNAMIC_DROPDOWN_BY_NAME = "xpath=//select[@name='%s']";
+	
+	public static final String DYNAMIC_RADIOBUTTON_BY_ID= "xpath=//input[@id='%s']";
+	
+	
+	
 }

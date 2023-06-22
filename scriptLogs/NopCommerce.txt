@@ -1,4 +1,17 @@
-[INFO ] [2023-06-21 18:47:29,828] Pre -con Login 01: Navigate to login link
-[INFO ] [2023-06-21 18:47:31,338] Pre -con Login 02: Set Cookie and reload page
-[INFO ] [2023-06-21 18:47:34,455] Pre -con Login 03: verify 'My account' is displayed
-[INFO ] [2023-06-21 18:47:34,830]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-22 22:00:37,084] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 22:00:38,224] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 22:00:38,369] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 22:00:38,884] Register - Step 04: Enter to Email textbox with value is minhtai2896@gmail.com
+[INFO ] [2023-06-22 22:00:39,014] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-22 22:00:39,148] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-22 22:00:39,266] Register - Step 07: Click to Register button
+[INFO ] [2023-06-22 22:00:40,012] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-22 22:00:40,117] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 22:00:40,513] Login - Step 02: Enter to email textbox with email is minhtai2896@gmail.com
+[INFO ] [2023-06-22 22:00:40,623] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 22:00:40,750] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 22:00:41,421] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-22 22:00:41,491] Login - Step 06: Navigate to My account page
+[INFO ] [2023-06-22 22:00:41,872] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2023-06-22 22:00:41,945] OS name = windows 10
+[INFO ] [2023-06-22 22:00:41,945] Driver instance name = chromedriver: chrome on windows (efb9f89d7468658b56acb1d0306d57d3)

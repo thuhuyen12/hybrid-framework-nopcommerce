@@ -190,7 +190,7 @@ public class BasePage { //là các hàm dùng chung cho page object
 	 }
 	 public void selectItemInDefaultDropdown(WebDriver driver, String locatorType, String textItem, String...dynamicValues) {
 		 Select select = new Select(getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
-		 select.selectByValue(textItem); 
+		 select.selectByVisibleText(textItem); 
 	 }
 	 //Lấy item đã chọn ở vị trí đầu tiên
 	 public String getFirstSeclectedItem(WebDriver driver, String locatorType) {
@@ -259,6 +259,12 @@ public class BasePage { //là các hàm dùng chung cho page object
 		} 
 	 }
 	 
+	 public void checkTheCheckboxOrRadio(WebDriver driver, String locatorType, String...dynamicValues) {
+		 WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValues));
+		 if (!element.isSelected()) {
+			 element.click();
+		} 
+	 }
 	 public void uncheckTheCheckbox(WebDriver driver, String locatorType) {
 		 WebElement element = getWebElement(driver, locatorType);
 		 if (element.isSelected()) {
@@ -542,6 +548,38 @@ public class BasePage { //là các hàm dùng chung cho page object
 		}
 		 sleepInSecond(3);
 	 }
+	
+	//Pattern Object
+	public void inputToTextboxByID(WebDriver driver, String textboxID, String value) {
+		waitForAllElementsVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		sendkeyToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, textboxID);
+	}
+	public void clickToButtonByText(WebDriver driver, String buttonText) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+	}
+	
+	/**Select item in dropdown by Name attribute
+	 * @param driver
+	 * @param dropdownAttributeName
+	 * @param itemValue
+	 */
+	public void selectToDropdownByName(WebDriver driver, String dropdownAttributeName, String itemValue) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownAttributeName);
+		selectItemInDefaultDropdown(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, itemValue, dropdownAttributeName);
+	}
+	
+	/**Select radio button by ID
+	 * @param driver
+	 * @param radioButtonID
+	 */
+	public void clickToRadioButtonByID(WebDriver driver, String radioButtonID) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_RADIOBUTTON_BY_ID, radioButtonID);
+		checkTheCheckboxOrRadio(driver, BasePageUI.DYNAMIC_RADIOBUTTON_BY_ID, radioButtonID);
+	}
+	
+	
+	
 	
 	
 	

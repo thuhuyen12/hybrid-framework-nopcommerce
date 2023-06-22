@@ -147,3 +147,160 @@
 [INFO ] [2023-06-21 18:47:31,338] Pre -con Login 02: Set Cookie and reload page
 [INFO ] [2023-06-21 18:47:34,455] Pre -con Login 03: verify 'My account' is displayed
 [INFO ] [2023-06-21 18:47:34,830]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-06-22 16:32:30,357] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 16:32:31,369] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 16:32:31,482] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 16:32:31,615] Register - Step 04: Enter to Email textbox with value is minhtai4983@gmail.com
+[INFO ] [2023-06-22 16:32:31,737] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-22 16:32:31,860] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-22 16:32:31,987] Register - Step 07: Click to Register button
+[INFO ] [2023-06-22 16:32:32,677] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-22 16:32:32,740] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 16:32:33,127] Login - Step 02: Enter to email textbox with email is minhtai4983@gmail.com
+[INFO ] [2023-06-22 16:32:33,249] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 16:32:33,358] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 16:32:34,075] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-22 16:32:34,153] Login - Step 06: Navigate to My account page
+[INFO ] [2023-06-22 16:32:34,530] Login - Step 07: Verify Customer Info page is displayed..
+[INFO ] [2023-06-22 16:33:08,905] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 16:33:10,031] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 16:33:10,165] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 16:33:10,295] Register - Step 04: Enter to Email textbox with value is minhtai5298@gmail.com
+[INFO ] [2023-06-22 16:33:10,405] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-22 16:33:10,533] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-22 16:33:10,676] Register - Step 07: Click to Register button
+[INFO ] [2023-06-22 16:33:11,412] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-22 16:33:11,465] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 16:33:11,896] Login - Step 02: Enter to email textbox with email is minhtai5298@gmail.com
+[INFO ] [2023-06-22 16:33:12,025] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 16:33:12,145] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 16:33:12,850] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-22 16:33:12,914] Login - Step 06: Navigate to My account page
+[INFO ] [2023-06-22 16:33:13,306] Login - Step 07: Verify Customer Info page is displayed..
+[INFO ] [2023-06-22 17:06:10,682] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 17:06:11,752] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 17:06:11,880] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 17:06:12,006] Register - Step 04: Enter to Email textbox with value is minhtai6241@gmail.com
+[INFO ] [2023-06-22 17:06:12,135] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-22 17:06:12,251] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-22 17:06:12,374] Register - Step 07: Click to Register button
+[INFO ] [2023-06-22 17:06:13,092] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-22 17:06:13,155] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 17:06:13,773] Login - Step 02: Enter to email textbox with email is minhtai6241@gmail.com
+[INFO ] [2023-06-22 17:06:13,901] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 17:06:14,023] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 17:06:15,213] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-22 17:06:15,272] Login - Step 06: Navigate to My account page
+[INFO ] [2023-06-22 17:06:15,671] Login - Step 07: Verify Customer Info page is displayed..
+[INFO ] [2023-06-22 17:06:15,861] OS name = windows 10
+[INFO ] [2023-06-22 17:06:15,861] Driver instance name = chromedriver: chrome on windows (045b9e7db9e70db58de872de61da0638)
+[INFO ] [2023-06-22 21:13:00,913] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 21:13:02,045] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 21:13:02,187] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 21:13:02,315] Register - Step 04: Enter to Email textbox with value is minhtai7411@gmail.com
+[INFO ] [2023-06-22 21:13:02,443] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-22 21:13:02,559] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-22 21:13:02,687] Register - Step 07: Click to Register button
+[INFO ] [2023-06-22 21:13:03,473] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-22 21:13:03,760] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 21:13:04,160] Login - Step 02: Enter to email textbox with email is minhtai7411@gmail.com
+[INFO ] [2023-06-22 21:13:04,252] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 21:13:04,367] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 21:13:34,677] OS name = windows 10
+[INFO ] [2023-06-22 21:13:34,677] Driver instance name = chromedriver: chrome on windows (e7c3b849919badc9c6a42ba6a0193ca0)
+[INFO ] [2023-06-22 21:13:34,685] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-G1MTGT6', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e7c3b849919badc9c6a42ba6a0193ca0
+[INFO ] [2023-06-22 21:14:36,778] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 21:14:37,805] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 21:14:37,938] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 21:14:38,064] Register - Step 04: Enter to Email textbox with value is minhtai233@gmail.com
+[INFO ] [2023-06-22 21:14:38,196] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-22 21:14:38,310] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-22 21:14:38,443] Register - Step 07: Click to Register button
+[INFO ] [2023-06-22 21:14:39,153] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-22 21:14:39,447] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 21:14:39,907] Login - Step 02: Enter to email textbox with email is minhtai233@gmail.com
+[INFO ] [2023-06-22 21:14:40,032] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 21:14:40,159] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 21:15:09,278] OS name = windows 10
+[INFO ] [2023-06-22 21:15:09,278] Driver instance name = chromedriver: chrome on windows (bfd0bbc92a6bbb711d16fab8c1176fb4)
+[INFO ] [2023-06-22 21:15:09,286] disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-G1MTGT6', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bfd0bbc92a6bbb711d16fab8c1176fb4
+[INFO ] [2023-06-22 21:15:39,868] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 21:15:40,990] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 21:15:41,115] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 21:15:41,251] Register - Step 04: Enter to Email textbox with value is minhtai6970@gmail.com
+[INFO ] [2023-06-22 21:15:41,378] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-22 21:15:41,505] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-22 21:15:41,630] Register - Step 07: Click to Register button
+[INFO ] [2023-06-22 21:15:42,407] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-22 21:15:42,684] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 21:15:43,107] Login - Step 02: Enter to email textbox with email is minhtai6970@gmail.com
+[INFO ] [2023-06-22 21:15:43,215] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 21:15:43,330] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 21:15:44,060] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-22 21:15:44,581] OS name = windows 10
+[INFO ] [2023-06-22 21:15:44,581] Driver instance name = chromedriver: chrome on windows (519065d9628b0894e8a3ebb9a58d98c6)
+[INFO ] [2023-06-22 21:48:52,451] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 21:48:53,617] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 21:48:53,758] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 21:50:07,405] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 21:50:08,584] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 21:50:08,715] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 21:53:31,444] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 21:53:32,591] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 21:53:32,715] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 21:54:03,407] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 21:54:04,422] Login - Step 02: Enter to email textbox with email is minhtai1808@gmail.com
+[INFO ] [2023-06-22 21:54:04,542] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 21:54:04,649] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 21:54:05,042] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-22 21:54:15,380] OS name = windows 10
+[INFO ] [2023-06-22 21:54:15,380] Driver instance name = chromedriver: chrome on windows (9b63e260499cab38cc69d188c224d200)
+[INFO ] [2023-06-22 21:54:15,387] disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-G1MTGT6', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b63e260499cab38cc69d188c224d200
+[INFO ] [2023-06-22 21:57:24,197] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 21:57:25,352] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 21:57:25,498] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 21:57:56,131] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 21:57:57,223] Login - Step 02: Enter to email textbox with email is minhtai2553@gmail.com
+[INFO ] [2023-06-22 21:57:57,345] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 21:57:57,467] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 21:57:57,870] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-22 21:58:28,219] OS name = windows 10
+[INFO ] [2023-06-22 21:58:28,219] Driver instance name = chromedriver: chrome on windows (ed8b53e2e6c955e9c270e3025e616739)
+[INFO ] [2023-06-22 22:00:37,084] Register - Step 01: Navigate to 'Register' page
+[INFO ] [2023-06-22 22:00:38,224] Register - Step 02: Enter to first name textbox with value is Nguyen
+[INFO ] [2023-06-22 22:00:38,369] Register - Step 03: Enter to last name textbox with value is Minh Tai
+[INFO ] [2023-06-22 22:00:38,884] Register - Step 04: Enter to Email textbox with value is minhtai2896@gmail.com
+[INFO ] [2023-06-22 22:00:39,014] Register - Step 05: Enter to passoword textbox with value is 123456
+[INFO ] [2023-06-22 22:00:39,148] Register - Step 06: Enter to confirm password textbox with value is 123456
+[INFO ] [2023-06-22 22:00:39,266] Register - Step 07: Click to Register button
+[INFO ] [2023-06-22 22:00:40,012] Register - Step 08: Verify register success message appear
+[INFO ] [2023-06-22 22:00:40,117] Login - Step 01: Navigate to login link
+[INFO ] [2023-06-22 22:00:40,513] Login - Step 02: Enter to email textbox with email is minhtai2896@gmail.com
+[INFO ] [2023-06-22 22:00:40,623] Login - Step 03: Enter to password textbox with email is123456
+[INFO ] [2023-06-22 22:00:40,750] Login - Step 04: Click to login button
+[INFO ] [2023-06-22 22:00:41,421] Login - Step 05: Verify 'My account' link is displayed
+[INFO ] [2023-06-22 22:00:41,491] Login - Step 06: Navigate to My account page
+[INFO ] [2023-06-22 22:00:41,872] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2023-06-22 22:00:41,945] OS name = windows 10
+[INFO ] [2023-06-22 22:00:41,945] Driver instance name = chromedriver: chrome on windows (efb9f89d7468658b56acb1d0306d57d3)
