@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="WordPress"> 
+	<listeners>
+		<listener class-name = "commons.MethodListener" />
+		<listener class-name = "reportConfig.AllureTestListener" />
+	</listeners>
+	
+	<parameter name="urlAdmin" value="http://localhost/automation/wp-admin/" /> 
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search" />
+		</classes>
+		
+	</test>
+</suite>

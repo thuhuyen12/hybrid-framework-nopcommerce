@@ -4,16 +4,24 @@
 		<listener class-name = "commons.MethodListener" />
 		<listener class-name = "reportConfig.AllureTestListener" />
 		
+<!--		<listener class-name = "reportConfig.ExtentTestManager" />-->
+
 <!--		<listener class-name = "reportConfig.ReportNGListener" />-->
 <!--		<listener class-name="org.uncommons.reportng.HTMLReporter" />-->
 <!--		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
 	</listeners>
 	
-  <test name="Run on Chrome"> <!-- test name: môi trường chạy-->
-  <parameter name = "browser" value ="chrome"/>
-    <classes>
-      <class name="com.nopcommerce.user.Level_18_Pattern_Object"/>
-    </classes>
-  </test> 
-  
-</suite> 
+	<parameter name="" value="" /> <!-- Truyền URL vào-->
+	<test name="Run on Chrome">
+		<!-- test name: môi trường chạy-->
+		<parameter name="browser" value="chrome" />
+<!--		<classes>-->
+<!--			<class name="com.nopcommerce.user.Level_18_Pattern_Object" />-->
+<!--		</classes>-->
+		
+		<!-- Nếu muốn chạy cả package-->
+		<package>
+			<package name ="" />
+		</package>
+	</test>
+</suite>
