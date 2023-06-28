@@ -5,11 +5,13 @@ import org.testng.annotations.Test;
 import commons.BasePage;
 import commons.BaseTest;
 import commons.PageGeneratorManager;
-import pageObjects.wordpress.admin.AdminPostAddNewPO;
-import pageObjects.wordpress.admin.AdminDashboardPO;
-import pageObjects.wordpress.admin.AdminLoginPO;
-import pageObjects.wordpress.admin.AdminPageGeneratorManager;
-import pageObjects.wordpress.admin.AdminPostSearchPO;
+import pageObjects.wordpress.AdminDashboardPO;
+import pageObjects.wordpress.AdminLoginPO;
+import pageObjects.wordpress.AdminPostAddNewPO;
+import pageObjects.wordpress.AdminPostSearchPO;
+import pageObjects.wordpress.UserHomePO;
+import pageObjects.wordpress.UserPostDetailPO;
+import pageObjects.wordpress.WordpressPageGeneratorManager;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -29,17 +31,21 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest{
 
 	String username = "automationfc";
 	String password = "automationfc";
-	String postTitle = "The automation testing class " + getGenerateFakeNumber();
-	String postBody = "1. Le Nhat Minh \n 2. Tran To Uyen \n 3. Nguyen Minh Tai \n Total is " + getGenerateFakeNumber();
+	String postTitle = "The automation testing class" + getGenerateFakeNumber();
+	String postBody = "Member Le Nhat Minh" + getGenerateFakeNumber();
 	String postSearchUrl;
+	String author = "Thu Huyen Admin";
+	String userUrl, adminUrl;
+	String dateOfPost= getToday();
 	
-	
-	@Parameters({"browser","urlAdmin"})
+	@Parameters({"browser", "urlAdmin", "urlUser"})
 	@BeforeClass
-	public void beforeClass(String browserName, String urlAdmin) {
+	public void beforeClass(String browserName, String urlAdmin, String urlUser) {
+		this.userUrl = urlUser;
+		this.adminUrl = urlAdmin;
 		log.info("Pre - 01: Open browser and admin URL");
-		driver = getBrowserDriver(browserName, urlAdmin);
-		adminLoginPage = AdminPageGeneratorManager.getAdminLoginPage(driver);
+		driver = getBrowserDriver(browserName, this.adminUrl);
+		adminLoginPage = WordpressPageGeneratorManager.getAdminLoginPage(driver);
 		
 		log.info("Pre - 02: Enter to Username textbox value is " + username);
 		adminLoginPage.enterToUsernameTextbox(username);
@@ -73,14 +79,45 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest{
 		adminPostAddNewPage.clickToPublishButton();
 		
 		log.info("Create 07: Verify message 'Post published' is displayed");
-		Assert.assertTrue(adminPostAddNewPage.isPostPublishedMessageDisplayed("Post published."));
+		verifyTrue(adminPostAddNewPage.isPostPublishedMessageDisplayed("Post published."));
 	
 	}
 	
 	@Test
-	public void Post_02_Search_Post() {
+	public void Post_02_Search_And_View_Post() {
 		log.info("Search 01: Open Post Search Page URL");
 		adminPostSearchPage = adminPostAddNewPage.openPostSearchPage(postSearchUrl); 
+		
+		log.info("Search 02: Enter to Search textbox");
+		adminPostSearchPage.enterToSearchTextbox(postTitle);
+		
+		log.info("Search 03: Click to Search Posts button");
+		adminPostSearchPage.clickToSearchPostButton();
+		
+		log.info("Search 04: Verify Post title is displayed in table");
+		adminPostSearchPage.isPostSearchTableDisplayedInTable("title", postTitle);
+		
+		log.info("Search 05: Verify Author is displayed in table");
+		adminPostSearchPage.isPostSearchTableDisplayedInTable("author", author);
+		
+		log.info("View 01: Open User home page");
+		userHomePage = adminPostSearchPage.openUserHomePage(driver, this.userUrl);
+	
+		log.info("View 02: Verify Post info is displayed on Homepage");
+		verifyTrue(userHomePage.isPostTitleDisplayedOnHomePage(postTitle));
+		verifyTrue(userHomePage.isPostBodyDisplayedOnHomePage(postBody));
+		verifyTrue(userHomePage.isAuthorDisplayedOnHomePage(postTitle, author));
+		verifyTrue(userHomePage.isDateOfPostDisplayedOnHomePage(postTitle, dateOfPost));
+
+		log.info("View 03: Click to Post title on Homepage");
+		userPostDetailPage = userHomePage.clickToPostTitleOnHomePage(postTitle);
+		
+		log.info("View 04: Verify Post info is displayed on Post Detail page");
+		verifyTrue(userPostDetailPage.isPostTitleDisplayedOnPostDetailPage(postTitle));
+		verifyTrue(userPostDetailPage.isPostBodyDisplayedOnPostDetailPage(postBody));
+		verifyTrue(userPostDetailPage.isAuthorDisplayedOnPostDetailPage(author));
+		verifyTrue(userPostDetailPage.isDateOfPostDisplayedOnPostDetailPage(dateOfPost));
+		
 	}
 
 
@@ -90,12 +127,12 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest{
 	}
 
 	@Test
-	public void Post_04_Edit_Post() {
+	public void Post_03_Edit_Post() {
 		
 	}
 	
 	@Test
-	public void Post_05_Delete_Post() {
+	public void Post_04_Delete_Post() {
 		
 	}
 	
@@ -114,5 +151,6 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest{
 	private AdminDashboardPO adminDashboardPage;
 	private AdminPostSearchPO adminPostSearchPage;
 	private AdminPostAddNewPO adminPostAddNewPage;
-
+	private UserHomePO userHomePage;
+	private UserPostDetailPO userPostDetailPage;
 }
