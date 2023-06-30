@@ -1,9 +1,9 @@
-package pageObjects.wordpress.admin;
+package pageObjects.wordpress;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.wordpress.admin.AdminDashboardPageUI;
+import pageUIs.wordpress.AdminDashboardPageUI;
 
 public class AdminDashboardPO extends BasePage {
 
@@ -16,7 +16,7 @@ public class AdminDashboardPO extends BasePage {
 	public AdminPostSearchPO clickToPostLink() {
 		waitForElementClickable(driver, AdminDashboardPageUI.POST_LINK);
 		clickToElement(driver, AdminDashboardPageUI.POST_LINK);
-		return new AdminPostSearchPO(driver);
+		return WordpressPageGeneratorManager.getAdminPostSearchPage(driver);
 	}
 	
 	

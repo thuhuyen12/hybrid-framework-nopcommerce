@@ -25,11 +25,17 @@ import pageObject.nopCommerce.user.CustomerInfoPageObject;
 import pageObject.nopCommerce.user.HomePageObject;
 import pageObject.nopCommerce.user.MyProductReviewPageObject;
 import pageObject.nopCommerce.user.RewardPointPageObject;
+import pageObjects.wordpress.UserHomePO;
+import pageObjects.wordpress.WordpressPageGeneratorManager;
 import pageUIs.jquery.uploadFiles.HomePageUIsUploadFile;
 import pageUIs.user.BasePageUI;
 import pageUIs.user.BasePageUploadFileUI;
 import pageUIs.user.CustomerInfoPageUI;
 
+/**
+ * @author Admin
+ *
+ */
 public class BasePage { //là các hàm dùng chung cho page object
 
 	public static BasePage getBasePageObject() {
@@ -176,6 +182,11 @@ public class BasePage { //là các hàm dùng chung cho page object
 		 WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValues));
 		 element.clear();
 		 element.sendKeys(textValue);
+	 }
+	 
+	 public void clearValueInElementByPressKey(WebDriver driver, String locatorType) {
+		 WebElement element = getWebElement(driver, locatorType);
+		 element.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 	 }
 	 public String getElementText(WebDriver driver, String locatorType) {
 		 return getWebElement(driver, locatorType).getText();
@@ -334,6 +345,7 @@ public class BasePage { //là các hàm dùng chung cho page object
 		 Actions action = new Actions(driver);
 		 action.sendKeys(getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)), key).perform();
 	 }
+	
 	 //JS executor
 
 
@@ -578,6 +590,10 @@ public class BasePage { //là các hàm dùng chung cho page object
 		checkTheCheckboxOrRadio(driver, BasePageUI.DYNAMIC_RADIOBUTTON_BY_ID, radioButtonID);
 	}
 	
+	public UserHomePO openUserHomePage(WebDriver driver, String userUrl) {
+		openPageUrl(driver, userUrl);
+		return WordpressPageGeneratorManager.getUserHomePage(driver);
+	}
 	
 	
 	

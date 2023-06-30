@@ -1,9 +1,9 @@
-package pageObjects.wordpress.admin;
+package pageObjects.wordpress;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.wordpress.admin.AdminLoginPageUI;
+import pageUIs.wordpress.AdminLoginPageUI;
 
 public class AdminLoginPO extends BasePage {
 	
@@ -26,7 +26,7 @@ public class AdminLoginPO extends BasePage {
 	public AdminDashboardPO clickToLoginButton() {
 		waitForElementClickable(driver, AdminLoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, AdminLoginPageUI.LOGIN_BUTTON);
-		return new AdminDashboardPO(driver);
+		return WordpressPageGeneratorManager.getAdminDashboardPage(driver);
 	}
 	
 	

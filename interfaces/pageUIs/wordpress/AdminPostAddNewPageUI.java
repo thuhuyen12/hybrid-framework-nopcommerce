@@ -1,4 +1,4 @@
-package pageUIs.wordpress.admin;
+package pageUIs.wordpress;
 
 public class AdminPostAddNewPageUI {
 
@@ -10,5 +10,8 @@ public class AdminPostAddNewPageUI {
 
 	public static final String PUBLISH_BUTTON = "css=button.editor-post-publish-button";
 
-	public static final String POST_PUBLISHED_MESSAGE ="xpath=//div[@class='components-snackbar__content' and text()='%s']";
+	public static final String POST_PUBLISHED_AND_UPDATEED_MESSAGE ="xpath=//div[@class='components-snackbar__content' and text()='%s']";
+
+	public static final String UPDATE_BUTTON = "css=button.editor-post-publish-button";
+
 }
